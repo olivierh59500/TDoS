@@ -10,3 +10,7 @@ Case 3: Packets from a particular source are attacked
 Case 4: Packets to a particular destination is attacked
 
 Case 5: Every second packet forwarded through the malicious router is attacked
+
+Case 6: Regularity = Burst
+
+Case 7: Regularity = Random Intervals (isn't this the same as case 2?)
