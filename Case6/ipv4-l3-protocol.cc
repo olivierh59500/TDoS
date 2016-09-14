@@ -924,7 +924,7 @@ Ipv4L3Protocol::IpForward (Ptr<Ipv4Route> rtentry, Ptr<const Packet> p, const Ip
   //(ipHeader.GetSource () ==  Ipv4Address("10.1.1.1") || ipHeader.GetSource () ==  Ipv4Address("10.1.1.2"))
 
   //std::cout<<"Random TTL value = "<<randomno<<std::endl;
-  if((packet_Count%3==0 || packet_Count%3==1 || packet_Count%3==2) && ipHeader.GetProtocol () != Icmpv4L4Protocol::PROT_NUMBER && 
+  if((packet_Count%7==0 || packet_Count%7==1 || packet_Count%7==2) && ipHeader.GetProtocol () != Icmpv4L4Protocol::PROT_NUMBER && 
           ipHeader.GetDestination ().IsBroadcast () == false &&
           ipHeader.GetDestination ().IsMulticast () == false && ipHeader.GetTtl () >= 3)
   {
